@@ -1,0 +1,230 @@
+html {
+    font-size: 10px;
+}
+
+h2 {
+    font-size: 3em;
+    color: #2467B1;
+}
+
+p {
+    font-size: 1.6em;
+}
+
+li {
+    font-size: 1.6em;
+}
+
+header {
+    font-size: 2.4em;
+    color: #FFF;
+}
+
+header h1 {
+    padding-left: 1.5rem;
+}
+
+.navli {
+    display: inline-block;
+    margin: 0 .5rem;
+    padding-left: 1rem;
+    font-size: .9em;
+}
+
+.navli a {
+    color: #FFF;
+}
+
+.navli + .navli {
+    border-left: 2px solid #FFF;
+}
+
+
+/*FOR DROPDOWN MENU*/
+
+nav {
+    background-color: #989A9B;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+
+/* sub navigation */
+
+nav li ul {
+    background-color: #4A77A7;
+    position: absolute;
+    left: 0;
+    top: 40px;
+    /* make this equal to the line-height of the links (specified below) */
+    width: 200px;
+}
+
+nav li li {
+    font-size: .8em;
+    position: relative;
+    margin: 0;
+    display: block;
+}
+
+nav li li ul {
+    position: absolute;
+    top: 0;
+    left: 200px;
+    /* make this equal to the width of the sub nav above */
+    margin: 0;
+}
+
+ul.sub-menu {
+    display: none;
+}
+
+
+/* style all links */
+
+nav a {
+    line-height: 40px;
+    padding: 0 12px;
+    margin: 0 12px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+nav a:hover,
+nav a:focus,
+nav a:active {
+    color: rgb(50, 50, 50);
+}
+
+
+/* style sub level links */
+
+nav li li a {
+    border-bottom: solid 1px #FFF;
+    margin: 0 10px;
+    padding: 0;
+}
+
+nav li li:last-child a {
+    border-bottom: none;
+}
+
+
+/*END DROPDOWN MENU*/
+
+.contentmain {
+    padding: 2rem 4rem 4rem 4rem;
+    background-color: #FFF;
+}
+
+.content {
+    max-width: 700px;
+}
+
+.content img {
+    border: 2px solid #2467B1;
+    box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, .7);
+    margin: .4rem;
+    max-width: 700px;
+}
+
+.main {
+    font-size: 2em;
+    padding: 2rem;
+    background-color: #FFF;
+    text-align: center;
+}
+
+.mainbutton {
+    width: 250px;
+    height: 250px;
+    display: inline-block;
+    text-align: center;
+    font-size: 2em;
+    color: #FFF;
+    margin: 2rem;
+}
+
+.singlelineheight {
+    line-height: calc(250px/1);
+}
+
+.triplelineheight {
+    line-height: calc(250px/5);
+}
+
+.main a {
+    text-decoration: none;
+}
+
+
+/*DOWNLOAD BUTTON*/
+
+.downloadbtn {
+    background-color: #A82422;
+    border: 1px #A82422 solid;
+    color: #FFF;
+    border-radius: 15px;
+    padding: 1rem;
+    width: 20rem;
+    margin: 0 0 2rem 5rem;
+    font-size: 2em;
+    text-align: center;
+    margin: 0 auto;
+    transition-duration: 0.4s;
+}
+
+.pdfbtn {
+    text-decoration: none;
+}
+
+.downloadbtn:hover {
+    background-color: #FFF;
+    color: #000;
+    border: 1px #A82422 solid;
+}
+
+
+/*COLORS*/
+
+.mainblue {
+    background-color: #2467B1;
+}
+
+.lightgray {
+    background-color: #DEDFDF;
+}
+
+.tanbrown {
+    background-color: #D8D2C5;
+}
+
+.lightblue {
+    background-color: #4A77A7;
+}
+
+.brightblue {
+    background-color: #098DBD;
+}
+
+.grayblue {
+    background-color: #71899D;
+}
+
+.medgray {
+    background-color: #989A9B;
+}

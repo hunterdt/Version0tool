@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sales Tools</title>
+    <!-- external CSS link -->
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link href="../css/advanced-progress-tracker.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+    <!--    Initialize JQuery Menu-->
+    <script>
+        $(function () {
+            $("#menu").menu();
+        });
+    </script>
+    <!--    Progress Tracker Plugin-->
+    <script src="../js/advanced-progress-tracker.js"></script>
+    <!--    Popup Image plugin "FancyBox"-->
+    <link rel="stylesheet" href="../fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="../fancybox/source/jquery.fancybox.pack.js"></script>
+    <!--    Fancybox helpers-->
+    <link rel="stylesheet" href="../fancybox/source/helpers/jquery.fancybox-buttons.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="../fancybox/source/helpers/jquery.fancybox-buttons.js"></script>
+    <script type="text/javascript" src="../fancybox/source/helpers/jquery.fancybox-media.js"></script>
+
+    <link rel="stylesheet" href="../fancybox/source/helpers/jquery.fancybox-thumbs.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="../fancybox/source/helpers/jquery.fancybox-thumbs.js"></script>
+
+    <!--Initialize progressTracker plugin-->
+    <script type='text/javascript'>
+        $('body').progressTracker();
+    </script>
+    <!--    Initialize FancyBox-->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".fancybox").fancybox();
+        });
+    </script>
+</head>
+
+<body class="mainblue">
+    <header>
+        <h1>TimeTrade</h1>
+
+        <nav>
+            <ul class="navbar">
+                <li class="navli"><a href="">Home</a></li>
+                <li class="navli"><a href="">New Hire</a></li>
+                <li class="navli dropdown"><a href="tools.html">Sales Tools</a>
+                    <ul class="sub-menu">
+                        <li><a href="">WebEx</a></li>
+                        <li><a href="">TimeTrade</a></li>
+                        <li><a href="">Sales Navigator</a></li>
+                        <li><a href="">Customer Account Metrics</a></li>
+                        <li><a href="">Working with Customer Service</a></li>
+                    </ul>
+                </li>
+                <li class="navli dropdown"><a href="">Salesforce</a>
+                    <ul class="sub-menu">
+                        <li><a href="">Overview</a></li>
+                        <li><a href="">Managing Activities</a></li>
+                        <li><a href="">Managing Opportunities</a></li>
+                        <li><a href="">Forecasting</a></li>
+                        <li><a href="">Engage</a></li>
+                    </ul>
+                </li>
+                <li class="navli dropdown"><a href="">Amazon Business Products</a>
+                    <ul class="sub-menu">
+                        <li><a href="">ATEP</a></li>
+                        <li><a href="">Business Analytics</a></li>
+                        <li><a href="">Catalog Curation</a></li>
+                        <li><a href="">Customer Specific Pricing</a></li>
+                        <li><a href="">Large Account Management</a></li>
+                        <li><a href="">Payment Solutions</a></li>
+                        <li><a href="">Punchout/PPI</a></li>
+                        <li><a href="">SpotBuy-RFx</a></li>
+                        <li><a href="">Supplier Consolidation</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contentmain">
+        <a class="pdfbtn" href="../pdfs/TimeTrade%20QRG.pdf" target="_blank">
+            <div class="downloadbtn">
+                Download as PDF
+            </div>
+        </a>
+        <article class="content" id="TrackScrollProgress">
+            <div class="spt-trackThis">
+                <h2>What is it?</h2>
+                <p>TimeTrade offers a self-service scheduling option that allows customers to schedule appointments through email or a website. </p>
+            </div>
+            <div class="spt-trackThis">
+                <h2>Why do I need it?</h2>
+                <p>TimeTrade will save you the time of trying to schedule a phone call with customers. The customer can choose from your available times and schedule the time that best suits their need. There are two main ways to schedule with TimeTrade:</p>
+                <ul>
+                    <li>You can send an individual customer multiple appointment options.</li>
+                    <li>You can create a generic link that will allow customers to view your full availability based on your Outlook calendar.</li>
+                </ul>
+            </div>
+            <div class="spt-trackThis">
+                <h2>How do I get started?</h2>
+                <ol>
+                    <li>A TimeTrade account will be created for you.</li>
+                    <li>After the account is created, you will receive an email with an account activation link. </li>
+                    <li>Click the link to activate your account and create a password.</li>
+                </ol>
+                <div class="spt-trackThis">
+                    <h2>How do I connect my Outlook calendar?</h2>
+                    <ol>
+                        <li>Close Outlook.</li>
+                        <li>Log in to www.TimeTrade.com.</li>
+                        <li>Click on “My Account” in the top menu bar.</li>
+                        <li>Click on “Connect Your Calendar” in the new menu bar.</li>
+                        <li>Click on “Connect to Outlook”.</li>
+                        <li>Download and install the connector.</li>
+                        <li>Launch Outlook and enter your TimeTrade login.</li>
+                    </ol>
+                    <a class="fancybox" href="images/timetrade/timetrade01.png">
+                        <img src="images/timetrade/timetrade01.png" alt="" /></a>
+                </div>
+                <div class="spt-trackThis">
+                    <h2>How do I set availability?</h2>
+                    <ol>
+                        <li>On the www.TimeTrade.com main page, click “30 Minute Phone Call” on the left sidebar beneath “Activities.” </li>
+                        <li>On the “30 Minute Phone Call” page, click “edit” next to “Appointment Availability.” This will bring you to a calendar.</li>
+                        <li>Set your availability by dragging across the times you are available. TimeTrade will remove times that you are not available according to your Outlook calendar.</li>
+                        <li>Click “Finish” to save.</li>
+                    </ol>
+                    <a class="fancybox" href="images/timetrade/timetrade02.png">
+                        <img src="images/timetrade/timetrade02.png" alt="" /></a>
+                </div>
+                <div class="spt-trackThis">
+                    <h2>How do I get the link to my calendar?</h2>
+                    <ol>
+                        <li>On the main page, click “30 Minute Phone Call” on the left sidebar beneath “Activities.” </li>
+                        <li>Your link is listed on the bottom of the page under “Your Activity Link.”</li>
+                        <li>Highlight and copy the link to share it.</li>
+                    </ol>
+                </div>
+                <div class="spt-trackThis">
+                    <h2>How should I share my schedule?</h2>
+                    <ul>
+                        <li>Include your link in your email signature with the line “To schedule time with me, click here.”</li>
+                        <li>When trying to book a time with a customer, email the customer your calendar link. </li>
+                    </ul>
+
+                </div>
+        </article>
+    </section>
+    <script src="js/advanced-progress-tracker.min.js"></script>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
