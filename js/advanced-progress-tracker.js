@@ -263,7 +263,7 @@ $.fn.progressTracker = function (options) {
 
         // include color-stylesheets if needed -->
         if (settings.horColor == 'blue' || settings.verColor == 'blue') {
-            $('head').append('<link href="css/themes/spt-blue.min.css" rel="stylesheet" />');
+            $('head').append('<link href="../css/themes/spt-blue.min.css" rel="stylesheet" />');
         } else if (settings.horColor == 'green' || settings.verColor == 'green') {
             $('head').append('<link href="css/themes/spt-green.min.css" rel="stylesheet" />');
         } else if (settings.horColor == 'orange' || settings.verColor == 'orange') {

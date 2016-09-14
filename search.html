@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Search Results</title>
+    <!-- external CSS link -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+    <!--    Initialize JQuery Menu-->
+    <script>
+        $(function () {
+            $("#menu").menu();
+        });
+    </script>
+
+    <!--    Tipue Search connections-->
+    <script src="./tipuesearch/tipuesearch_content.js"></script>
+    <link href="./tipuesearch/tipuesearch.css" rel="stylesheet">
+    <script src="./tipuesearch/tipuesearch_set.js"></script>
+    <script src="./tipuesearch/tipuesearch.min.js"></script>
+
+</head>
+
+<body class="mainblue">
+    <header>
+        <h1>Search Results</h1>
+        <form action="search.html">
+            <input type="text" name="q" id="tipue_search_input" autocomplete="off" required>
+        </form>
+
+        <nav>
+            <ul class="navbar">
+                <li class="navli"><a href="index.html">Home</a></li>
+                <li class="navli"><a href="">New Hire</a></li>
+                <li class="navli dropdown"><a href="tools.html">Sales Tools</a>
+                    <ul class="sub-menu">
+                        <li><a href="">WebEx</a></li>
+                        <li><a href="">TimeTrade</a></li>
+                        <li><a href="">Sales Navigator</a></li>
+                        <li><a href="">Customer Account Metrics</a></li>
+                        <li><a href="">Working with Customer Service</a></li>
+                    </ul>
+                </li>
+                <li class="navli dropdown"><a href="">Salesforce</a>
+                    <ul class="sub-menu">
+                        <li><a href="">Overview</a></li>
+                        <li><a href="">Managing Activities</a></li>
+                        <li><a href="">Managing Opportunities</a></li>
+                        <li><a href="">Forecasting</a></li>
+                        <li><a href="">Engage</a></li>
+                    </ul>
+                </li>
+                <li class="navli dropdown"><a href="">Amazon Business Products</a>
+                    <ul class="sub-menu">
+                        <li><a href="">ATEP</a></li>
+                        <li><a href="">Business Analytics</a></li>
+                        <li><a href="">Catalog Curation</a></li>
+                        <li><a href="">Customer Specific Pricing</a></li>
+                        <li><a href="">Large Account Management</a></li>
+                        <li><a href="">Payment Solutions</a></li>
+                        <li><a href="">Punchout/PPI</a></li>
+                        <li><a href="">SpotBuy-RFx</a></li>
+                        <li><a href="">Supplier Consolidation</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contentmain">
+        <form action="search.html">
+            <input type="text" name="q" id="tipue_search_input" autocomplete="off" required>
+        </form>
+        <div id="tipue_search_content"></div>
+
+    </section>
+    <!--    Tipue Search Script-->
+    <script>
+        $(document).ready(function () {
+            $('#tipue_search_input').tipuesearch();
+        });
+    </script>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

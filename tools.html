@@ -7,42 +7,85 @@
     <!-- external CSS link -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+    <!--    Initialize JQuery Menu-->
+    <script>
+        $(function () {
+            $("#menu").menu();
+        });
+    </script>
+
+    <!--    Tipue Search stylesheet-->
+    <link href="tipuesearch/tipuesearch.css" rel="stylesheet">
 </head>
 
 <body class="mainblue">
     <header>
         <h1>Sales Tools</h1>
+        <form action="search.html">
+            <input type="text" name="q" id="tipue_search_input" autocomplete="off" required>
+        </form>
 
         <nav>
             <ul class="navbar">
-                <li class="navli"><a href="">Home</a></li>
+                <li class="navli"><a href="index.html">Home</a></li>
                 <li class="navli"><a href="">New Hire</a></li>
-                <li class="navli"><a href="tools.html">Sales Tools</a></li>
-                <li class="navli"><a href="">Salesforce</a></li>
-                <li class="navli"><a href="">Amazon Business Products</a></li>
+                <li class="navli dropdown"><a href="tools.html">Sales Tools</a>
+                    <ul class="sub-menu">
+                        <li><a href="tools/webex.html">WebEx</a></li>
+                        <li><a href="tools/timetrade.html">TimeTrade</a></li>
+                        <li><a href="tools/salesnavigator.html">Sales Navigator</a></li>
+                        <li><a href="tools/customeraccountmetrics.html">Customer Account Metrics</a></li>
+                        <li><a href="tools/wcs.html">Working with Customer Service</a></li>
+                    </ul>
+                </li>
+                <li class="navli dropdown"><a href="sf.html">Salesforce</a>
+                    <ul class="sub-menu">
+                        <li><a href="sf/sfoverview.html">Overview</a></li>
+                        <li><a href="sf/sfactivities.html">Managing Activities</a></li>
+                        <li><a href="sf/sfopportunities.html">Managing Opportunities</a></li>
+                        <li><a href="sf/sfforecasting.html">Forecasting</a></li>
+                        <li><a href="sf/engage.html">Engage</a></li>
+                    </ul>
+                </li>
+                <li class="navli dropdown"><a href="products.html">Amazon Business Products</a>
+                    <ul class="sub-menu">
+                        <li><a href="products/atep.html">ATEP</a></li>
+                        <li><a href="products/businessanalytics.html">Business Analytics</a></li>
+                        <li><a href="products/catalogcuration.html">Catalog Curation</a></li>
+                        <li><a href="products/csp.html">Customer Specific Pricing</a></li>
+                        <li><a href="products/largeaccount.html">Large Account Management</a></li>
+                        <li><a href="products/paymentsolutions.html">Payment Solutions</a></li>
+                        <li><a href="products/punchoutppi.html">Punchout/PPI</a></li>
+                        <li><a href="products/rfx.html">SpotBuy-RFx</a></li>
+                        <li><a href="products/supplierconsolidation.html">Supplier Consolidation</a></li>
+                    </ul>
             </ul>
         </nav>
     </header>
 
     <section class="main">
         <div>
-            <a href="">
+            <a href="tools/webex.html">
                 <div class="mainbutton medgray singlelineheight">WebEx</div>
             </a>
             <a href="tools/timetrade.html">
                 <div class="mainbutton lightblue singlelineheight">TimeTrade</div>
             </a>
-            <a href="">
+            <a href="tools/salesnavigator.html">
                 <div class="mainbutton brightblue triplelineheight">LinkedIn Sales Navigator</div>
             </a>
-            <a href="">
+            <a href="tools/customeraccountmetrics.html">
                 <div class="mainbutton grayblue triplelineheight">Customer Account Metrics</div>
             </a>
-            <a href="">
+            <a href="tools/wcs.html">
                 <div class="mainbutton tanbrown triplelineheight">Working with Customer Service</div>
             </a>
         </div>
     </section>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

@@ -163,12 +163,20 @@ nav li li:last-child a {
     line-height: calc(250px/1);
 }
 
+.doublelineheight {
+    line-height: calc(250px/3);
+}
+
 .triplelineheight {
     line-height: calc(250px/5);
 }
 
 .main a {
     text-decoration: none;
+}
+
+header form {
+    float: right;
 }
 
 
